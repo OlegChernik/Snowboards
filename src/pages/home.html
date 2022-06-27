@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <p class="header__subtitle">Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. <a href="">Read more</a> </p>
+            <div class="header__fon"></div>
+            <div class="header__top">
+                <div class="logo">
+                    <a href="http://google.com"><img src="../icons/logo.jpg" alt="logo"></a>
+                    <span class="text__logo">Wolf House</span>
+                </div>
+                <form class="search" action="">
+                    <input type="text" placeholder="Search brands, gear and guides">
+                </form>
+                <div class="things">
+                    <div class="language">
+                        <select class="select" name="" id="">
+                            <option value="">En</option>
+                            <option value="">Ger</option>
+                            <option value="">Pol</option>
+                        </select>
+                        <img src="../icons/Frame.svg" alt="">
+                    </div>
+                    <select class="account" name="" id="">
+                        <option value="">My account</option>
+                        <option value="">Log in</option>
+                        <option value="">Sign up</option>
+                    </select>
+                    <select  class="account" name="" id="">
+                        <option value="">usd</option>
+                        <option value="">eur</option>
+                    </select> 
+                    
+                    <div class="basket">
+                      <span>+3</span><img src="../icons/cart.svg" alt="">
+                    </div>
+                </div>
+                <div class="burger-things">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__lists">
+                    <li class="nav__list"><a class="nav__link" href="">Categories</a></li>
+                    <li class="nav__list"><a class="nav__link" href="">Ski boots</a></li>
+                    <li class="nav__list"><a class="nav__link" href="">Ski accessories</a></li>
+                    <li class="nav__list"><a class="nav__link" href="">Apparel</a></li>
+                    <li class="nav__list"><a class="nav__link" href="">Snowboard shop</a></li>
+                    <li class="nav__list"><a class="nav__link" href="">Brands</a></li>
+                    <li class="nav__list"><a class="nav__link " href="">Sale</a></li>
+                </ul>
+                <div class="nav__burger">
+                    <span></span>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="banner__content">
+                    <h1 class="banner__title">NEW COLLECTION</h1>
+                    <h2 class="banner__subtitle">UP TO 50% OFF !</h2>
+                    <button class="banner__button">SHOP NOW</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <p class="page__subtitle">Home / Snowboard shop / <span>Snowboards</span></p>
+            <section class="shop">
+                <h2 class="shop__title">Snowboards</h2>
+                <div class="shop__row">
+                    <form class="checkbox">
+                        <div class="multiselect">
+                            <select class="multiselect__select">
+                              <option>Cattegories</option>
+                              <option value="">All-Mauntain Snowboards (51)</option>
+                              <option value="">Wide Snowboards (22)</option>
+                              <option value="">Freeride Snowboards (21)</option>
+                              <option value="">View more..</option>
+                            </select> 
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                              <select>
+                                <option>Gender</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesGender">
+                              <label for="one">
+                                  <input type="checkbox" id="one" />Men’s (6)</label>
+                                <label for="two">
+                                  <input type="checkbox" id="two" />Wide Snowboards (22)</label>
+                                <label  for="three">
+                                  <input type="checkbox" id="three" />Freeride Snowboards (21)</label>
+                              <a href="">View more...</a>
+                            </div>
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxesBrans()">
+                              <select>
+                                <option>Brans</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesBrans">
+                              <label for="b-one">
+                                  <input type="checkbox" id="b-one" />Arbor (19)</label>
+                                <label for="b-two">
+                                  <input type="checkbox" id="b-two" />Bataleon (6)</label>
+                                <label  for="b-three">
+                                  <input type="checkbox" id="b-three" />Capita (14)</label>
+                              <a href="">View more...</a>
+                            </div>
+                            
+
+
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxesLenght()">
+                              <select>
+                                <option>Snowboards Lenght (cm)</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesLenght">
+                              <label for="s-one">
+                                  <input type="checkbox" id="s-one" />80 to 149 (39)</label>
+                                <label for="s-two">
+                                  <input type="checkbox" id="s-two" />150 to 159 (79)</label>
+                                <label  for="s-three">
+                                  <input type="checkbox" id="s-three" />160 to 169 (36)</label>
+                              <a href="">View more...</a>
+                            </div>
+                            
+
+
+                            
+
+
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxesShape()">
+                              <select>
+                                <option>Snowboards Shape</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesShape">
+                              <label for="sh-one">
+                                  <input type="checkbox" id="sh-one" />Directional (39)</label>
+                                <label for="sh-two">
+                                  <input type="checkbox" id="sh-two" />Directional Twin (36)</label>
+                                <label  for="sh-three">
+                                  <input type="checkbox" id="sh-three" />True Twin (26)</label>
+                              <a href="">View more...</a>
+                            </div>
+       
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxesStyle()">
+                              <select>
+                                <option> Snowboards Style</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesStyle">
+                              <label for="st-one">
+                                  <input type="checkbox" id="st-one" />All-Mountain (64)</label>
+                                <label for="st-two">
+                                  <input type="checkbox" id="st-two" />Freeride (22)</label>
+                                <label  for="st-three">
+                                  <input type="checkbox" id="st-three" />Freestyle (22)</label>
+                              <a href="">View more...</a>
+                            </div>
+                            
+
+
+       
+                        </div>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxesPrice()">
+                              <select>
+                                <option>Price</option>
+                              </select>
+                              <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxesPrice">
+                              <label for="p-one">
+                                  <input type="checkbox" id="p-one" />All-Mountain (64)</label>
+                                <label for="p-two">
+                                  <input type="checkbox" id="p-two" />Freeride (22)</label>
+                                <label  for="p-three">
+                                  <input type="checkbox" id="p-three" />Freestyle (22)</label>
+                              <a href="">View more...</a>
+                            </div>
+                            
+
+
+       
+                        </div>
+                        <select class="select__profile" name="" id="">
+                            <option value="">Snowbord Profile</option>
+                            <option value="">Snowbord Profile two</option>
+                            
+                        </select>
+                        <select class="select__flex" name="" id="">
+                            <option value="">Flex</option>
+                            <option value="">Flex two</option>
+                        </select>
+
+
+
+                       
+     
+                    </form> 
+                    <div class="products">
+                        <div class="products__subtite">
+                            <span class="matches">170 Matches found</span>
+                            <span class="view">View <span>9</span></span>
+                            <span class="popular">Sort By <span>Most Popular </span></span>
+                        </div>
+                        <div class="product__row">
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordone.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordtwo.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordthree.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordfore.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordfive.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordsix.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordseven.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product__image">
+                                <img src="../img/bordeite.jpg" alt="bordone"> 
+                                </div>
+                                
+                                <div class="product__description">
+                                    <span>Burton:</span>Skeleton Key Snowbord - 2020/2021
+                                </div>
+                                <div class="product__price">
+                                    <span>&dollar;519.95</span>
+                                    <div class="star">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__blue.svg" alt="star__blue">
+                                        <img src="../icons/star__white.svg" alt="star__white">
+                                    </div>
+                                </div>
+                                <div class="product__link">
+                                    <a href="../pages/Snowboard.html">ADD TO CART</a>  
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="product">
+                                <div class="product__image nature">
+                                    <img src="../img/nature.jpg" alt="nature"> 
+                                </div>
+
+                                <h3 class="nature__title">EVO TRIP</dh3>
+                                <p class="nature__subtitle">ADVANTURE TRAVEL PACKAGE</p>
+                                <a href="#" class="nature__link">Travel with Us</a>
+                                
+                                 
+                                
+                            </div>
+                        </div>
+                        <div class="poroduc__footer">
+                            <form action="#">
+                                <span>Page:</span>
+                                <select name="" id="">
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>  
+                                </select>
+                                <span>of 25</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sellers">
+                <div class="sellers__title">Best Sellers</div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sellers__row row-card">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="../img/white-helmet.jpg" alt="">
+                                    </div>
+                                    <p class="card__disk">
+                                        POC Obex Spin Helmet
+                                    </p>
+                                    <span class="card__price">&dollar;279.95</span>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="../img/black-boot.jpg" alt="">
+                                    </div>
+                                    <p class="card__disk">
+                                        Rossignol <br>
+                                        EVO 70 Ski Boots
+                                    </p>
+                                    <span class="card__price">&dollar;89.95</span>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="../img/blue-boot.jpg" alt="">
+                                    </div>
+                                    <p class="card__disk">
+                                        Tecnica <br> JT 2 Pearl Girl Ski Boots  
+                                    </p>
+                                    <span class="card__price">&dollar;119.95</span>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="../img/bord-color.jpg" alt="">
+                                    </div>
+                                    <p class="card__disk">
+                                        Rossignol <br> XV Sashimi LG Light
+                                    </p>
+                                    <span class="card__price">&dollar;599.95</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+
+
+
+            </section>
+            <section class="support">
+                <div class="support__help help">
+                    <div class="help__title">Need Help?</div>
+                    <div class="help__subtitle">Talk to our Gearheads 24/7 about your needs</div>
+                    <a class="help__button" href="">Chat Now</a>
+                    <a class="help__number" href="tel:1-800-409-4502">Or Call: 1-800-409-4502</a>
+                </div>
+                <div class="support__info info">
+                    <div class="info__title">Stay in the know</div>
+                    <div class="info__subtitle">Be the first to see sales & new gear!</div>
+                    <p class="info__email">Email Address</p>
+                    <form action="" class="info__form">
+                        <input class="input" type="text" placeholder="">
+                        <button class="submit btn-blue" type="submit"><a href="">Submit</a></button>
+                    </form>
+                </div>      
+            </section> 
+        </main>
+
+        <footer class="footer">
+            <div class="footer__navigation navigation">
+                <ul class="navigation__lists">
+                    <li class="navigation__list"><a href="" class="navigation__link">Categories</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Ski boots</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Ski accessories</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Apparel</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Snowboard shop</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Brands</a></li>
+                    <li class="navigation__list"><a href="" class="navigation__link">Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__info">
+                <div class="about">
+                    <div class="about__column column">
+                        <ul class="column__lists">
+                            <li class="column__list">Gift Certificates</li>
+                            <li class="column__list">e-Gift Certificate</li>
+                            <li class="column__list">Classic Gift Card</li>
+                        </ul>
+                    </div>
+                    <div class="about__column column">
+                        <ul class="column__lists">
+                            <li class="column__list">Resources</li>
+                            <li class="column__list">Returns</li>
+                            <li class="column__list">Order Status</li>
+                            <li class="column__list">Sale Item Policy</li>
+                            <li class="column__list">Sales Tax Policy</li>
+                            <li class="column__list">Terms of Use</li>
+                            <li class="column__list">Privacy Policy</li>
+                            <li class="column__list">Do Not Sell My Personal Data</li>
+                            <li class="column__list">International Shipping Policy</li>
+                            <li class="column__list">Learning Resources</li>
+                            <li class="column__list">Gift Card Terms & Conditions</li>
+                            <li class="column__list">Special Group Offers</li>
+                        </ul>
+                    </div>
+                    <div class="about__column column">
+                        <ul class="column__lists">
+                            <li class="column__list">About Wolf House</li>
+                            <li class="column__list">About Wolf House</li>
+                            <li class="column__list">Press Releases</li>
+                            <li class="column__list">Group Sales</li>
+                            <li class="column__list">Land Your Dream Job</li>
+                            <li class="column__list">Affiliate Program</li>
+                            <li class="column__list">Accessibility Statement</li>
+                        </ul>
+                    </div>   
+                </div>
+                <div class="communication">
+                    <div class="block">
+                        <div class="communication__icons">
+                            <img src="../icons/Facebook - Negative.svg" alt="Facebook">
+                            <img src="../icons/Twitter - Negative.svg" alt="Twitter">
+                            <img src="../icons/YouTube - Negative - Alternate.svg" alt="YouTube">
+                            <img src="../icons/Instagram - Negative.svg" alt="Instagram">
+                        </div>
+                        <p class="communication__download">
+                            Download the Wolf House App
+                        </p>
+                        <div class="communication__market">
+                            <img src="../icons/googleplay.jpg" alt="googleplay">
+                            <img src="..//icons/appstore.jpg" alt="appstore">
+                        </div>
+                        <div class="communication__logo">
+                            <img src="../icons/image 2.svg" alt="logo">
+                            <span>Wolf House</span>
+                        </div>
+                        <p class="communication__copy">&copy;Wolf House.com – All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> 
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
